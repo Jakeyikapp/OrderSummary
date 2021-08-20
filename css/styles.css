@@ -1,0 +1,66 @@
+body {
+  align-items: center;
+  background-image: url('../images/pattern-desktop.svg');
+  background-color: #E1E8FF;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  display: flex;
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container {
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px -4px rgba(56,42,225,0.15);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 640px;
+  width: 420px;
+}
+
+.header-image {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+#order-summary-title {
+  color: #1F2F56;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1.2rem auto 1.3rem auto;
+}
+
+.summary-text {
+  color: #86899A;
+  font-weight: 400;
+  margin: 20px 35px;
+}
+
+.purchase-summary-container {
+  background: blue;
+  display: ;
+  text-align: start;
+}
+
+.purchase-text {
+  display: inline-block;
+}
+
+#music-note-img {
+  padding: 20px;
+}
+
+
+
+
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+  right: 10%;
+}

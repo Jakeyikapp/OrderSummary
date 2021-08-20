@@ -1,7 +1,7 @@
-body {
+body, button{
   align-items: center;
   background-image: url('../images/pattern-desktop.svg');
-  background-color: #E1E8FF;
+  background-color: hsl(225, 100%, 94%);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
@@ -14,12 +14,12 @@ body {
 
 .card-container {
   background-color: #ffffff;
-  box-shadow: 0px 20px 40px -4px rgba(56,42,225,0.15);
+  box-shadow: 0 20px 40px -4px rgba(56,42,225,0.15);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   min-width: 420px;
-  height: 640px;
+  height: 645px;
   width: 420px;
 }
 
@@ -28,15 +28,15 @@ body {
   width: 100%;
 }
 
-#order-summary-title {
-  color: #1F2F56;
+.order-summary-title {
+  color: hsl(223, 47%, 23%);
   font-size: 1.5rem;
   font-weight: 900;
   margin: 1.2rem auto 1.3rem auto;
 }
 
 .summary-text {
-  color: #86899A;
+  color: hsl(224, 23%, 55%);
   font-weight: 400;
   margin: 20px 35px 5px 35px;
 }
@@ -46,7 +46,7 @@ body {
   background: #F8F9FE;
   border-radius: 0.8rem;
   display: grid;
-  grid-template-columns: 90px auto auto;
+  grid-template-columns: 95px auto auto;
   grid-template-rows: 95px;
   margin: 0 auto 20px auto;
   width: 80%;
@@ -60,23 +60,24 @@ body {
 }
 
 .purchase-text h3 {
+  color: hsl(223, 47%, 23%);
   font-size: 1rem;
   margin-bottom: 0.35rem;
 }
 
 .purchase-text p {
-  color: #86899A;
+  color: hsl(224, 23%, 55%);
   margin-top: 0.35rem;
 }
 
-#music-note-img {
+.music-note-img {
   width: 50px;
   height: 50px;
   justify-self: center;
 }
 
 .change-button {
-  color: #4B3BDC;
+  color: hsl(245, 75%, 52%);
   font-size: 0.9rem;
   font-weight: 700;
   justify-self: end;
@@ -84,16 +85,39 @@ body {
 }
 
 .payment-button {
-  background: #382AE1;
+  background: hsl(245, 75%, 52%);
   border: none;
   border-radius: 0.7rem;
+  box-shadow: 0 20px 35px -4px rgba(56,42,225,0.25);
   color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
   height: 2.7rem;
   width: 80%;
-  margin: 10px auto 25px auto;
+  margin: 10px auto 30px auto;
 }
 
+.cancel-order-button {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
 
+/* hover styling */
+
+.change-button:hover {
+  color: #756CF1;
+  text-decoration: none;
+}
+
+.payment-button:hover {
+  background: #756CF1;
+}
+
+.cancel-order-button:hover {
+  color: hsl(223, 47%, 23%);
+}
 
 
 

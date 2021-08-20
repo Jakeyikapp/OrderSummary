@@ -1,10 +1,10 @@
 body, button {
   align-items: center;
-  background-image: url('../images/pattern-desktop.svg');
   background-color: hsl(225, 100%, 94%);
+  background-image: url('../images/pattern-desktop.svg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: top;
   display: flex;
   flex-direction: column;
   font-family: 'Red Hat Display', sans-serif;
@@ -17,8 +17,8 @@ body, button {
 
 .card-container {
   background-color: #ffffff;
-  box-shadow: 0 20px 40px -4px rgba(56, 42, 225, 0.15);
   border-radius: 1rem;
+  box-shadow: 0 20px 40px -4px rgba(56, 42, 225, 0.15);
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -55,8 +55,8 @@ body, button {
 }
 
 .purchase-text {
-  justify-self: start;
   font-size: 1rem;
+  justify-self: start;
   margin: 0;
   text-align: start;
 }
@@ -73,9 +73,9 @@ body, button {
 }
 
 .music-note-img {
-  width: 50px;
   height: 50px;
   justify-self: center;
+  width: 50px;
 }
 
 .change-button {
@@ -95,8 +95,8 @@ body, button {
   cursor: pointer;
   font-weight: 700;
   height: 2.7rem;
-  width: 80%;
   margin: 10px auto 30px auto;
+  width: 80%;
 }
 
 .cancel-order-button {
@@ -121,11 +121,11 @@ body, button {
   color: hsl(223, 47%, 23%);
 }
 
+
 .attribution {
-  display: none;
+  bottom: 0.5rem;
   font-size: 11px;
   position: fixed;
-  bottom: 0.5rem;
   text-align: center;
 }
 
@@ -142,13 +142,13 @@ body, button {
     width: 330px;
   }
   .purchase-summary-container {
-    grid-template-columns: 75px auto auto;
+    grid-template-columns: 77px auto auto;
     grid-template-rows: 85px;
     margin: 0 auto 20px auto;
-    width: 85%;
+    width: 87%;
   }
   .payment-button {
-    width: 85%;
+    width: 87%;
   }
   .summary-text {
     margin: 20px 35px 5px 35px;
@@ -159,5 +159,7 @@ body, button {
   .purchase-text p {
     margin-top: 0.1rem;
   }
-
+  .change-button {
+    margin-right: 20px;
+  }
 }

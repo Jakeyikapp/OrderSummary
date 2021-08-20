@@ -18,6 +18,7 @@ body {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  min-width: 420px;
   height: 640px;
   width: 420px;
 }
@@ -37,21 +38,59 @@ body {
 .summary-text {
   color: #86899A;
   font-weight: 400;
-  margin: 20px 35px;
+  margin: 20px 35px 5px 35px;
 }
 
 .purchase-summary-container {
-  background: blue;
-  display: ;
-  text-align: start;
+  align-items: center;
+  background: #F8F9FE;
+  border-radius: 0.8rem;
+  display: grid;
+  grid-template-columns: 90px auto auto;
+  grid-template-rows: 95px;
+  margin: 0 auto 20px auto;
+  width: 80%;
 }
 
 .purchase-text {
-  display: inline-block;
+  justify-self: start;
+  font-size: 1rem;
+  margin: 0;
+  text-align: start;
+}
+
+.purchase-text h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.purchase-text p {
+  color: #86899A;
+  margin-top: 0.35rem;
 }
 
 #music-note-img {
-  padding: 20px;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+}
+
+.change-button {
+  color: #4B3BDC;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-self: end;
+  margin-right: 25px;
+}
+
+.payment-button {
+  background: #382AE1;
+  border: none;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  height: 2.7rem;
+  width: 80%;
+  margin: 10px auto 25px auto;
 }
 
 

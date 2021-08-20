@@ -1,4 +1,4 @@
-body, button{
+body, button {
   align-items: center;
   background-image: url('../images/pattern-desktop.svg');
   background-color: hsl(225, 100%, 94%);
@@ -6,20 +6,22 @@ body, button{
   background-size: 100%;
   background-position: top;
   display: flex;
+  flex-direction: column;
   font-family: 'Red Hat Display', sans-serif;
   height: 100vh;
   justify-content: center;
   text-align: center;
 }
 
+
+
 .card-container {
   background-color: #ffffff;
-  box-shadow: 0 20px 40px -4px rgba(56,42,225,0.15);
+  box-shadow: 0 20px 40px -4px rgba(56, 42, 225, 0.15);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  min-width: 420px;
-  height: 645px;
+  margin: 10px;
   width: 420px;
 }
 
@@ -88,7 +90,7 @@ body, button{
   background: hsl(245, 75%, 52%);
   border: none;
   border-radius: 0.7rem;
-  box-shadow: 0 20px 35px -4px rgba(56,42,225,0.25);
+  box-shadow: 0 20px 35px -4px rgba(56, 42, 225, 0.25);
   color: #ffffff;
   cursor: pointer;
   font-weight: 700;
@@ -101,11 +103,11 @@ body, button{
   color: hsl(224, 23%, 55%);
   font-size: 0.9rem;
   font-weight: 700;
+  margin-bottom: 35px;
   text-decoration: none;
 }
 
 /* hover styling */
-
 .change-button:hover {
   color: #756CF1;
   text-decoration: none;
@@ -119,11 +121,43 @@ body, button{
   color: hsl(223, 47%, 23%);
 }
 
-
-
 .attribution {
-  position: absolute;
-  bottom: 1rem;
-  left: 10%;
-  right: 10%;
+  display: none;
+  font-size: 11px;
+  position: fixed;
+  bottom: 0.5rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url('../images/pattern-mobile.svg');
+  }
+  .card-container {
+    width: 330px;
+  }
+  .purchase-summary-container {
+    grid-template-columns: 75px auto auto;
+    grid-template-rows: 85px;
+    margin: 0 auto 20px auto;
+    width: 85%;
+  }
+  .payment-button {
+    width: 85%;
+  }
+  .summary-text {
+    margin: 20px 35px 5px 35px;
+  }
+  .purchase-text h3 {
+    margin-bottom: 0.1rem;
+  }
+  .purchase-text p {
+    margin-top: 0.1rem;
+  }
+
 }
